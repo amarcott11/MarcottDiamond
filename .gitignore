@@ -1,0 +1,14 @@
+*.bak
+*.qpf
+*.rpt
+*.qsf
+*.txt
+*.hdb
+*.cdb
+*.qmsg
+*.kpt
+*.cmp
+*.hsd
+*.logdb
+*.db
+*.flock
