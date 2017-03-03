@@ -70,11 +70,8 @@ module ISDU ( 	input logic			Clk,
 						S_23,
 						S_22,
 						S_21,
-						S_20,
 						S_16_1,
 						S_16_2,
-						S_14,
-						S_13,
 						S_12,
 						S_09,
 						S_07,
@@ -166,20 +163,18 @@ module ISDU ( 	input logic			Clk,
 				S_09 :
 						 Next_state <= S_18;
 				S_00 :
+					if(BEN)
+						 Next_state <= S_22;
+					else
 						 Next_state <= S_18;
 				S_12 :
 						 Next_state <= S_18;
 				S_04 :
-						 if(IR_11)
-							Next_state <= S_21;
-						 else
-							Next_state <= S_20;
+						 Next_state <= S_21;
 							
 				S_06 :
 						 Next_state <= S_25_1;
 						 
-				S_20 :
-						 Next_state <= S_18;
 				S_21 :
 						 Next_state <= S_18;
 				S_23 :
@@ -187,12 +182,10 @@ module ISDU ( 	input logic			Clk,
             S_25_1 : 
 						 Next_state <= S_25_2;
             S_25_2 : 
-						 Next_state <= S_18;
+						 Next_state <= S_27;
 				S_27 :
 						 Next_state <= S_18;
 
-				S_13 :
-						 Next_state <= S_18;
 				S_16_1 : 
 						 Next_state <= S_16_2;
 				S_16_2 :
@@ -261,13 +254,120 @@ module ISDU ( 	input logic			Clk,
             PauseIR2: ;
             S_32 : 
                 LD_BEN = 1'b1;
-            S_01 : 
+            S_01 : //ADD
                 begin 
+					SR1MUX = 1'b0; 
 					SR2MUX = IR_5;
 					ALUK = 2'b00;
 					GateALU = 1'b1;
 					LD_REG = 1'b1;
+					LD_CC = 1'b1;
                 end
+					 
+				S_05 : //AND
+					begin
+					SR1MUX = 1'b0;
+					SR2MUX = IR_5;
+					ALUK = 2'b01;
+					GateALU = 1'b1;
+					LD_REG = 1'b1;
+					LD_CC = 1'b1;
+					end
+					
+				S_09 : //NOT
+					begin
+					ALUK = 2'b10;
+					GateALU = 1'b1;
+					LD_REG = 1'b1;
+					LD_CC = 1'b1;
+					end
+					
+				S_06 : //LDR
+					begin
+					ADDR1MUX = 1'b1;
+					ADDR2MUX = 2'b01;
+					GateMARMUX = 1'b1;
+					LD_MAR = 1'b1;
+					end
+					
+				S_25_1 :
+					Mem_OE = 1'b0;
+					
+				S_25_2 :
+					begin
+					Mem_OE = 1'b0;
+					LD_MDR = 1'b1;
+					end
+					
+				S_27 :
+					begin
+					LD_CC = 1'b1;
+					GateMDR = 1'b1;
+					LD_REG = 1'b1;
+					end
+					
+				S_07 :
+					begin
+					ADDR1MUX = 1'b1;
+					ADDR2MUX = 2'b01;
+					GateMARMUX = 1'b1;
+					LD_MAR = 1'b1;
+					end
+				
+				S_23 :
+					begin
+					SR1MUX = 1'b1;
+					GateALU = 1'b1;
+					ALUK = 2'b11;
+					Mem_OE = 1'b1;
+					LD_MDR = 1'b1;
+					Mem_WE = 1'b0;
+					end
+					
+				S_16_1 :
+					begin
+					Mem_WE = 1'b0;
+					end
+					
+				S_16_2 :
+					begin
+					Mem_WE = 1'b1;
+					end
+					
+				S_04 :
+					begin
+					GatePC = 1'b1;
+					DRMUX = 1'b1;
+					LD_REG = 1'b1;
+					end
+					
+				S_21 :
+					begin
+					ADDR2MUX = 2'b11;
+					PCMUX = 2'b01;
+					LD_PC = 1'b1;
+					end
+					
+				S_12 :
+					begin
+					ADDR1MUX = 1'b1;
+					ADDR2MUX = 2'b00;
+					PCMUX = 2'b10;
+					LD_PC = 1'b1;
+					end
+					
+				
+				S_00:
+					LD_BEN = 1'b1;
+					
+				S_22:
+					begin
+					ADDR2MUX = 2'b10;
+					PCMUX = 2'b01;
+					LD_PC = 1'b1;
+					end
+					
+					
 
             // You need to finish the rest of states.....
 
