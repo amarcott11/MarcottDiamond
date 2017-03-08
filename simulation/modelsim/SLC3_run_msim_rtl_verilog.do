@@ -5,6 +5,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/RegFile.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/MUX3_2to1.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/ALU.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/HexDriver.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/tristate.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SLC3_2.sv}
@@ -15,6 +18,13 @@ vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/MUX16_2to1.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Incrementer.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Reg16.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/MUX16_BUS.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Branch.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/NZP.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT9.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT6.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT5.sv}
+vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Sync.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/test_memory.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/datapath.sv}
 vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/top_level.sv}

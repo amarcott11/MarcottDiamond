@@ -55,35 +55,35 @@ module RegFile(input Clk, Reset, LD_REG,
 							
 							endcase
 							end
-					end
 					
-			always_comb
-					begin		
+					
+			
+		
 					case(SR1MUX_out)
 						
 							3'b000:
-								SR1_out = R0;
+								SR1_out <= R0;
 								
 							3'b001:
-								SR1_out = R1;
+								SR1_out <= R1;
 								
 							3'b010:
-								SR1_out = R2;
+								SR1_out <= R2;
 								
 							3'b011:
-								SR1_out = R3;
+								SR1_out <= R3;
 								
 							3'b100:
-								SR1_out = R4;
+								SR1_out <= R4;
 								
 							3'b101:
-								SR1_out = R5;
+								SR1_out <= R5;
 								
 							3'b110:
-								SR1_out = R6;
+								SR1_out <= R6;
 								
 							3'b111:
-								SR1_out = R7;
+								SR1_out <= R7;
 								
 							default: ;
 							
@@ -92,28 +92,28 @@ module RegFile(input Clk, Reset, LD_REG,
 					case(SR2_in)
 						
 							3'b000:
-								SR2_out = R0;
+								SR2_out <= R0;
 								
 							3'b001:
-								SR2_out = R1;
+								SR2_out <= R1;
 								
 							3'b010:
-								SR2_out = R2;
+								SR2_out <= R2;
 								
 							3'b011:
-								SR2_out = R3;
+								SR2_out <= R3;
 								
 							3'b100:
-								SR2_out = R4;
+								SR2_out <= R4;
 								
 							3'b101:
-								SR2_out = R5;
+								SR2_out <= R5;
 								
 							3'b110:
-								SR2_out = R6;
+								SR2_out <= R6;
 								
 							3'b111:
-								SR2_out = R7;
+								SR2_out <= R7;
 								
 							default: ;
 							

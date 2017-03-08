@@ -30,11 +30,14 @@ module slc3(
 );
 
 // Declaration of push button active high signals	
-logic Reset_ah, Continue_ah, Run_ah;
+logic Reset_ah, Continue_ah, Run_ah, WE_sync, OE_sync;
 
-assign Reset_ah = ~Reset;
-assign Continue_ah = ~Continue;
-assign Run_ah = ~Run;
+ButtonSync resetsync (.Clk(Clk), .OUT(Reset_ah), .IN(~Reset));
+ButtonSync contsync (.Clk(Clk), .OUT(Continue_ah), .IN(~Continue));
+ButtonSync runsync  (.Clk(Clk), .OUT(Run_ah), .IN(~Run));
+
+Sync1 wesync (.Clk(Clk), .Reset(Reset_ah), .IN(WE), .OUT(WE_sync));
+Sync1 oesync (.Clk(Clk), .Reset(Reset_ah), .IN(OE), .OUT(OE_sync));
 
 // Internal connections
 logic BEN;
@@ -52,16 +55,16 @@ logic [15:0] Data_from_SRAM, Data_to_SRAM;
 logic [3:0][3:0] hex_4;
 
 // For week 1, hexdrivers will display IR
-//HexDriver hex_driver3 (IR[15:12], HEX3);
-//HexDriver hex_driver2 (IR[11:8], HEX2);
-//HexDriver hex_driver1 (IR[7:4], HEX1);
-//HexDriver hex_driver0 (IR[3:0], HEX0);
+HexDriver hex_driver3 (IR[15:12], HEX3);
+HexDriver hex_driver2 (IR[11:8], HEX2);
+HexDriver hex_driver1 (IR[7:4], HEX1);
+HexDriver hex_driver0 (IR[3:0], HEX0);
 
 // For week 2, hexdrivers will be mounted to Mem2IO
- HexDriver hex_driver3 (hex_4[3][3:0], HEX3);
- HexDriver hex_driver2 (hex_4[2][3:0], HEX2);
- HexDriver hex_driver1 (hex_4[1][3:0], HEX1);
- HexDriver hex_driver0 (hex_4[0][3:0], HEX0);
+// HexDriver hex_driver3 (hex_4[3][3:0], HEX3);
+// HexDriver hex_driver2 (hex_4[2][3:0], HEX2);
+// HexDriver hex_driver1 (hex_4[1][3:0], HEX1);
+// HexDriver hex_driver0 (hex_4[0][3:0], HEX0);
 
 // Connect MAR to ADDR, which is also connected as an input into MEM2IO
 //	MEM2IO will determine what gets put onto Data_CPU (which serves as a potential
@@ -84,7 +87,7 @@ Mem2IO memory_subsystem(
 
 // The tri-state buffer serves as the interface between Mem2IO and SRAM
 tristate #(.N(16)) tr0(
-	.Clk(Clk), .tristate_output_enable(~WE), .Data_write(Data_to_SRAM), .Data_read(Data_from_SRAM), .Data(Data)
+	.Clk(Clk), .tristate_output_enable(~WE_sync), .Data_write(Data_to_SRAM), .Data_read(Data_from_SRAM), .Data(Data)
 );
 
 // State machine and control signals

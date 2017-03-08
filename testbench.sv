@@ -54,13 +54,13 @@ S = 16'b0000000000000011;
    
 #4 Run = 1;
 
-#6 Continue = 0;
+#60 Continue = 0;
 #4 Continue = 1;
-#6 Continue = 0;
+#60 Continue = 0;
 #4 Continue = 1;
-#6 Continue = 0;
+#60 Continue = 0;
 #4 Continue = 1;
-#6 Continue = 0;
+#60 Continue = 0;
 #4 Continue = 1;
 
 #100 S = 16'b0000000000000001;

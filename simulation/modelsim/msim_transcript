@@ -12,111 +12,215 @@
 # ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/RegFile.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:49 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/RegFile.sv 
+# -- Compiling module RegFile
+# 
+# Top level modules:
+# 	RegFile
+# End time: 11:59:50 on Mar 03,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/MUX3_2to1.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:50 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/MUX3_2to1.sv 
+# -- Compiling module MUX3_2to1
+# 
+# Top level modules:
+# 	MUX3_2to1
+# End time: 11:59:50 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/ALU.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:50 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 11:59:50 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/HexDriver.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 18:59:58 on Feb 28,2017
+# Start time: 11:59:50 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 18:59:58 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:50 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/tristate.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 18:59:58 on Feb 28,2017
+# Start time: 11:59:50 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/tristate.sv 
 # -- Compiling module tristate
 # 
 # Top level modules:
 # 	tristate
-# End time: 18:59:58 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:51 on Mar 03,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SLC3_2.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 18:59:58 on Feb 28,2017
+# Start time: 11:59:51 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/SLC3_2.sv 
 # -- Compiling package SLC3_2
 # 
 # Top level modules:
 # 	--none--
-# End time: 18:59:59 on Feb 28,2017, Elapsed time: 0:00:01
+# End time: 11:59:51 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Mem2IO.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 18:59:59 on Feb 28,2017
+# Start time: 11:59:51 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/Mem2IO.sv 
 # -- Compiling module Mem2IO
 # 
 # Top level modules:
 # 	Mem2IO
-# End time: 18:59:59 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:51 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/ISDU.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 18:59:59 on Feb 28,2017
+# Start time: 11:59:51 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/ISDU.sv 
 # -- Compiling module ISDU
 # 
 # Top level modules:
 # 	ISDU
-# End time: 19:00:00 on Feb 28,2017, Elapsed time: 0:00:01
+# End time: 11:59:51 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/MUX16_4to1.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:00 on Feb 28,2017
+# Start time: 11:59:52 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/MUX16_4to1.sv 
 # -- Compiling module MUX16_4to1
 # 
 # Top level modules:
 # 	MUX16_4to1
-# End time: 19:00:00 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:52 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/MUX16_2to1.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:00 on Feb 28,2017
+# Start time: 11:59:52 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/MUX16_2to1.sv 
 # -- Compiling module MUX16_2to1
 # 
 # Top level modules:
 # 	MUX16_2to1
-# End time: 19:00:00 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:52 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Incrementer.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:00 on Feb 28,2017
+# Start time: 11:59:52 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/Incrementer.sv 
 # -- Compiling module Incrementer
+# -- Compiling module Adder
 # 
 # Top level modules:
 # 	Incrementer
-# End time: 19:00:01 on Feb 28,2017, Elapsed time: 0:00:01
+# 	Adder
+# End time: 11:59:52 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Reg16.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:01 on Feb 28,2017
+# Start time: 11:59:53 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/Reg16.sv 
 # -- Compiling module Reg16
 # 
 # Top level modules:
 # 	Reg16
-# End time: 19:00:01 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:53 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/MUX16_BUS.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:01 on Feb 28,2017
+# Start time: 11:59:53 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/MUX16_BUS.sv 
 # -- Compiling module MUX16_BUS
-# ** Warning: C:/ece385/SLC3/MUX16_BUS.sv(21): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
 # 
 # Top level modules:
 # 	MUX16_BUS
-# End time: 19:00:01 on Feb 28,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 11:59:53 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Branch.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:53 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/Branch.sv 
+# -- Compiling module Branch
+# 
+# Top level modules:
+# 	Branch
+# End time: 11:59:53 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/NZP.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:53 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/NZP.sv 
+# -- Compiling module NZP
+# 
+# Top level modules:
+# 	NZP
+# End time: 11:59:53 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:54 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/SEXT.sv 
+# -- Compiling module SEXT11
+# 
+# Top level modules:
+# 	SEXT11
+# End time: 11:59:54 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT9.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:54 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/SEXT9.sv 
+# -- Compiling module SEXT9
+# 
+# Top level modules:
+# 	SEXT9
+# End time: 11:59:54 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT6.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:54 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/SEXT6.sv 
+# -- Compiling module SEXT6
+# 
+# Top level modules:
+# 	SEXT6
+# End time: 11:59:54 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/SEXT5.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:54 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/SEXT5.sv 
+# -- Compiling module SEXT5
+# 
+# Top level modules:
+# 	SEXT5
+# End time: 11:59:55 on Mar 03,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/Sync.sv}
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:59:55 on Mar 03,2017
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/Sync.sv 
+# -- Compiling module ButtonSync
+# -- Compiling module Sync0
+# -- Compiling module Sync1
+# 
+# Top level modules:
+# 	ButtonSync
+# 	Sync0
+# 	Sync1
+# End time: 11:59:55 on Mar 03,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/test_memory.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:01 on Feb 28,2017
+# Start time: 11:59:55 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/test_memory.sv 
 # -- Compiling package SLC3_2
 # -- Compiling package test_memory_sv_unit
@@ -125,53 +229,53 @@
 # 
 # Top level modules:
 # 	test_memory
-# End time: 19:00:02 on Feb 28,2017, Elapsed time: 0:00:01
+# End time: 11:59:55 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/datapath.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:02 on Feb 28,2017
+# Start time: 11:59:55 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 19:00:02 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:56 on Mar 03,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/top_level.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:02 on Feb 28,2017
+# Start time: 11:59:56 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/top_level.sv 
 # -- Compiling module top_level
 # 
 # Top level modules:
 # 	top_level
-# End time: 19:00:03 on Feb 28,2017, Elapsed time: 0:00:01
+# End time: 11:59:56 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/slc3.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:03 on Feb 28,2017
+# Start time: 11:59:56 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/slc3.sv 
 # -- Compiling module slc3
 # 
 # Top level modules:
 # 	slc3
-# End time: 19:00:03 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:56 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/ece385/SLC3 {C:/ece385/SLC3/testbench.sv}
 # Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
-# Start time: 19:00:03 on Feb 28,2017
+# Start time: 11:59:56 on Mar 03,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/ece385/SLC3" C:/ece385/SLC3/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 19:00:03 on Feb 28,2017, Elapsed time: 0:00:00
+# End time: 11:59:56 on Mar 03,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -gui "+altera" -l msim_transcript -do "SLC3_run_msim_rtl_verilog.do" 
-# Start time: 19:00:04 on Feb 28,2017
+# Start time: 11:59:57 on Mar 03,2017
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.top_level
@@ -179,31 +283,33 @@
 # Loading work.test_memory_sv_unit
 # Loading work.test_memory
 # Loading work.slc3
+# Loading work.ButtonSync
 # Loading work.HexDriver
 # Loading work.datapath
 # Loading work.MUX16_BUS
 # Loading work.Reg16
 # Loading work.MUX16_4to1
 # Loading work.MUX16_2to1
+# Loading work.MUX3_2to1
 # Loading work.Incrementer
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.Adder
+# Loading work.NZP
+# Loading work.Branch
+# Loading work.SEXT11
+# Loading work.SEXT9
+# Loading work.SEXT6
+# Loading work.SEXT5
 # Loading work.Mem2IO
 # Loading work.tristate
 # Loading work.ISDU
-# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(17): [PCDPC] - Port size (16) does not match connection size (32) for port 'MARMUX_bus'. The port definition is at: C:/ece385/SLC3/MUX16_BUS.sv(1).
-# 
-#         Region: /testbench/processor0/processor1/d0/BUS_MUX
-# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(17): [PCDPC] - Port size (16) does not match connection size (32) for port 'ALU_bus'. The port definition is at: C:/ece385/SLC3/MUX16_BUS.sv(1).
-# 
-#         Region: /testbench/processor0/processor1/d0/BUS_MUX
-# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(54): [PCDPC] - Port size (16) does not match connection size (32) for port 'IN01'. The port definition is at: C:/ece385/SLC3/MUX16_4to1.sv(1).
+# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(60): [PCDPC] - Port size (16) does not match connection size (32) for port 'IN11'. The port definition is at: C:/ece385/SLC3/MUX16_4to1.sv(1).
 # 
 #         Region: /testbench/processor0/processor1/d0/MUXPC
-# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(54): [PCDPC] - Port size (16) does not match connection size (32) for port 'IN10'. The port definition is at: C:/ece385/SLC3/MUX16_4to1.sv(1).
+# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(92): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR2_in'. The port definition is at: C:/ece385/SLC3/RegFile.sv(3).
 # 
-#         Region: /testbench/processor0/processor1/d0/MUXPC
-# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(54): [PCDPC] - Port size (16) does not match connection size (32) for port 'IN11'. The port definition is at: C:/ece385/SLC3/MUX16_4to1.sv(1).
-# 
-#         Region: /testbench/processor0/processor1/d0/MUXPC
+#         Region: /testbench/processor0/processor1/d0/RegisterFile
 # 
 # add wave *
 # view structure
@@ -211,7 +317,49 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1000 ns
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R0
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R1
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R2
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R3
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R4
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R5
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R6
+add wave -position end  sim:/testbench/processor0/processor1/d0/RegisterFile/R7
 radix h
 # hexadecimal
-# End time: 19:03:55 on Feb 28,2017, Elapsed time: 0:03:51
-# Errors: 0, Warnings: 5
+restart -f
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top_level
+# Loading work.SLC3_2
+# Loading work.test_memory_sv_unit
+# Loading work.test_memory
+# Loading work.slc3
+# Loading work.ButtonSync
+# Loading work.HexDriver
+# Loading work.datapath
+# Loading work.MUX16_BUS
+# Loading work.Reg16
+# Loading work.MUX16_4to1
+# Loading work.MUX16_2to1
+# Loading work.MUX3_2to1
+# Loading work.Incrementer
+# Loading work.RegFile
+# Loading work.ALU
+# Loading work.Adder
+# Loading work.NZP
+# Loading work.Branch
+# Loading work.SEXT11
+# Loading work.SEXT9
+# Loading work.SEXT6
+# Loading work.SEXT5
+# Loading work.Mem2IO
+# Loading work.tristate
+# Loading work.ISDU
+# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(60): [PCDPC] - Port size (16) does not match connection size (32) for port 'IN11'. The port definition is at: C:/ece385/SLC3/MUX16_4to1.sv(1).
+# 
+#         Region: /testbench/processor0/processor1/d0/MUXPC
+# ** Warning: (vsim-3015) C:/ece385/SLC3/datapath.sv(92): [PCDPC] - Port size (3) does not match connection size (16) for port 'SR2_in'. The port definition is at: C:/ece385/SLC3/RegFile.sv(3).
+# 
+#         Region: /testbench/processor0/processor1/d0/RegisterFile
+run 1000ns

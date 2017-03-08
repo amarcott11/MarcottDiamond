@@ -18,7 +18,7 @@ module MUX16_BUS (input logic [15:0] PC_bus, MARMUX_bus, ALU_bus, MDR_bus,
 					DataBus = ALU_bus;
 					
 				else
-					DataBus = 16'hbeef;
+					DataBus = 16'h0000;
 			end
 			
 						

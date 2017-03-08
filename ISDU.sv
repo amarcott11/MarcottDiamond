@@ -72,6 +72,7 @@ module ISDU ( 	input logic			Clk,
 						S_21,
 						S_16_1,
 						S_16_2,
+						S_16_3,
 						S_12,
 						S_09,
 						S_07,
@@ -189,6 +190,8 @@ module ISDU ( 	input logic			Clk,
 				S_16_1 : 
 						 Next_state <= S_16_2;
 				S_16_2 :
+						 Next_state <= S_16_3;
+				S_16_3 :
 						 Next_state <= S_18;
 			// You need to finish the rest of states.....
 
@@ -250,8 +253,8 @@ module ISDU ( 	input logic			Clk,
 					GateMDR = 1'b1;
 					LD_IR = 1'b1;
                 end
-            PauseIR1: ;
-            PauseIR2: ;
+            PauseIR1: LD_LED = 1'b1;
+            PauseIR2: LD_LED = 1'b1;
             S_32 : 
                 LD_BEN = 1'b1;
             S_01 : //ADD
@@ -321,7 +324,6 @@ module ISDU ( 	input logic			Clk,
 					ALUK = 2'b11;
 					Mem_OE = 1'b1;
 					LD_MDR = 1'b1;
-					Mem_WE = 1'b0;
 					end
 					
 				S_16_1 :
@@ -331,7 +333,12 @@ module ISDU ( 	input logic			Clk,
 					
 				S_16_2 :
 					begin
-					Mem_WE = 1'b1;
+					Mem_WE = 1'b0;
+					end
+					
+				S_16_3 :
+					begin
+					Mem_WE = 1'b0;
 					end
 					
 				S_04 :
